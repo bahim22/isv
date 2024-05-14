@@ -15,18 +15,21 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
     {
         icon: <SettingsSuggestRoundedIcon />,
-        title: 'Adaptable performance',
-        description: 'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+        title: 'Infinite Success Virtual LLC is partnered with Fortune 500 companies',
+        description:
+            'We work with the Arise Platform to help companies that are looking for candidates to assist customers with various needs. From booking, insurance claims, hotel packages, complaints to say the lease, we require employees to work 15 hrs a week minimum to stay aboard, yet you can work as much as you please as an independent contractor.',
     },
     {
         icon: <ConstructionRoundedIcon />,
         title: 'Built to last',
-        description: 'Experience unmatched durability that goes above and beyond with lasting investment.',
+        description:
+            'Take control of your world and let Infinite Success Virtual LLC. help jump start Empowering your Success Journey!!!',
     },
     {
         icon: <ThumbUpAltRoundedIcon />,
-        title: 'Great user experience',
-        description: 'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+        title: 'option of purchasing the rights to own your own Virtual Call Center.',
+        description:
+            'Purchase your own Virtual Call Center for $750 with a course  & training plus Fortune 500 companies that provides the work from home jobs',
     },
     {
         icon: <AutoFixHighRoundedIcon />,
@@ -74,8 +77,8 @@ export default function Highlights() {
                         Highlights
                     </Typography>
                     <Typography variant='body1' sx={{ color: 'grey.400' }}>
-                        Explore why our product stands out: adaptability, durability, user-friendly design, and
-                        innovation. Enjoy reliable customer support and precision in every detail.
+                        Enjoy reliable job opportunities with our great partners! Come Check Us Out and Take Over with
+                        Infinite Success Virtual LLC!
                     </Typography>
                 </Box>
                 <Grid container spacing={2.5}>

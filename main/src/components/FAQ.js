@@ -45,14 +45,16 @@ export default function FAQ() {
                         aria-controls='panel1d-content'
                         id='panel1d-header'>
                         <Typography component='h3' variant='subtitle2'>
-                            How do I contact customer support if I have a question or issue?
+                            What equipment do I need?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography variant='body2' gutterBottom sx={{ maxWidth: { sm: '100%', md: '70%' } }}>
-                            You can reach our customer support team by emailing
-                            <Link> support@email.com </Link>
-                            or calling our toll-free number. We&apos;re here to assist you promptly.
+                            At a minimum, you will need these basics: A Computer, A noise-cancelling USB headset, A
+                            high-speed internet, A keypad/headset phone connection Certain client programs may have
+                            additional equipment requirements. Prior to selecting a client program, you will have access
+                            to the Opportunity Announcement which details any additional requirements above and beyond
+                            the ones listed in the System & Equipment Policy.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -62,13 +64,17 @@ export default function FAQ() {
                         aria-controls='panel2d-content'
                         id='panel2d-header'>
                         <Typography component='h3' variant='subtitle2'>
-                            Can I return the product if it doesn&apos;t meet my expectations?
+                            How soon can I start working?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography variant='body2' gutterBottom sx={{ maxWidth: { sm: '100%', md: '70%' } }}>
-                            Absolutely! We offer a hassle-free return policy. If you&apos;re not completely satisfied,
-                            you can return the product within [number of days] days for a full refund or exchange.
+                            Start earning in 2 to 5 weeks How soon you start working and earning money depends on how
+                            quickly you register, and what Client Opportunity you select. Once you have registered and
+                            set-up your user account, your next step is to enroll in a client opportunity. As part of
+                            the opportunity, you will have to take a certification course which will give you the
+                            details about the client and project you have selected, as well as the client’s systems
+                            which you will be using during servicing.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -78,14 +84,15 @@ export default function FAQ() {
                         aria-controls='panel3d-content'
                         id='panel3d-header'>
                         <Typography component='h3' variant='subtitle2'>
-                            What makes your product stand out from others in the market?
+                            How long do certificate courses take?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography variant='body2' gutterBottom sx={{ maxWidth: { sm: '100%', md: '70%' } }}>
-                            Our product distinguishes itself through its adaptability, durability, and innovative
-                            features. We prioritize user satisfaction and continually strive to exceed expectations in
-                            every aspect.
+                            Certification courses may take as little as two weeks or as long as five weeks to complete
+                            depending on the opportunity selected. Some opportunities provide an “earn while you learn”
+                            element to certification, where you will be taking calls while learning and earning revenue
+                            during the certification period.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -95,14 +102,15 @@ export default function FAQ() {
                         aria-controls='panel4d-content'
                         id='panel4d-header'>
                         <Typography component='h3' variant='subtitle2'>
-                            Is there a warranty on the product, and what does it cover?
+                            What hours are you available to help with registering?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography variant='body2' gutterBottom sx={{ maxWidth: { sm: '100%', md: '70%' } }}>
-                            Yes, our product comes with a [length of warranty] warranty. It covers defects in materials
-                            and workmanship. If you encounter any issues covered by the warranty, please contact our
-                            customer support for assistance.
+                            Registration support is available Monday – Friday from 8:00 a.m. to Midnight Eastern Time
+                            and Saturday from 9:00 a.m. to 5:00 p.m. Eastern Time in the U.S. and Canada and, Monday –
+                            Friday from 9:00 a.m. to 4:00 p.m. in the UK. If you are stuck or confused when signing up
+                            for the platform,
                         </Typography>
                     </AccordionDetails>
                 </Accordion>

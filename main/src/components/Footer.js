@@ -8,12 +8,13 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-
+import FormPro from '../Form';
 import { visuallyHidden } from '@mui/utils';
 
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
+// import TikTokIcon from "@mui/icons-material/TikTok";
 
 import SitemarkIcon from './SitemarkIcon';
 
@@ -53,15 +54,16 @@ export default function Footer() {
                         minWidth: { xs: '100%', sm: '60%' },
                     }}>
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-                        <SitemarkIcon />
-                        <Typography variant='body2' fontWeight={600} gutterBottom sx={{ mt: 2 }}>
-                            Join the newsletter
+                        {/* <SitemarkIcon /> */}
+                        {/* <Typography variant='body2' fontWeight={600} gutterBottom sx={{ mt: 2 }}>
+                            Join the team today!
                         </Typography>
                         <Typography variant='body2' color='text.secondary' mb={2}>
                             Subscribe for weekly updates. No spams ever!
-                        </Typography>
+                        </Typography> */}
                         <Stack direction='row' spacing={1} useFlexGap>
-                            <InputLabel htmlFor='email-newsletter' sx={visuallyHidden}>
+                            {/* <FormPro /> */}
+                            {/* <InputLabel htmlFor='email-newsletter' sx={visuallyHidden}>
                                 Email
                             </InputLabel>
                             <TextField
@@ -79,11 +81,21 @@ export default function Footer() {
                             />
                             <Button variant='contained' color='primary' sx={{ flexShrink: 0 }}>
                                 Subscribe
-                            </Button>
+                            </Button> */}
                         </Stack>
                     </Box>
                 </Box>
                 <Box
+                    sx={{
+                        display: { xs: 'none', sm: 'flex' },
+                        flexDirection: 'column',
+                        gap: 1,
+                    }}>
+                    <Typography variant='body2' fontWeight='medium'>
+                        <FormPro />
+                    </Typography>
+                </Box>
+                {/* <Box
                     sx={{
                         display: { xs: 'none', sm: 'flex' },
                         flexDirection: 'column',
@@ -126,8 +138,8 @@ export default function Footer() {
                     <Link color='text.secondary' variant='body2' href='#'>
                         Press
                     </Link>
-                </Box>
-                <Box
+                </Box> */}
+                {/* <Box
                     sx={{
                         display: { xs: 'none', sm: 'flex' },
                         flexDirection: 'column',
@@ -145,7 +157,7 @@ export default function Footer() {
                     <Link color='text.secondary' variant='body2' href='#'>
                         Contact
                     </Link>
-                </Box>
+                </Box> */}
             </Box>
             <Box
                 sx={{
@@ -157,7 +169,10 @@ export default function Footer() {
                     borderColor: 'divider',
                 }}>
                 <div>
-                    <Link color='text.secondary' variant='body2' href='#'>
+                    <Link
+                        color='text.secondary'
+                        variant='body2'
+                        href='https://www.ariseworkfromhome.com/privacy-policy/'>
                         Privacy Policy
                     </Link>
                     <Typography display='inline' sx={{ mx: 0.5, opacity: 0.5 }}>
@@ -178,25 +193,25 @@ export default function Footer() {
                     }}>
                     <IconButton
                         color='inherit'
-                        href='https://github.com/mui'
-                        aria-label='GitHub'
+                        href='https://m.facebook.com/people/Infinite-Success-Virtual-LLC/61557695124632'
+                        aria-label='Facebook'
                         sx={{ alignSelf: 'center' }}>
                         <FacebookIcon />
                     </IconButton>
                     <IconButton
                         color='inherit'
-                        href='https://twitter.com/MaterialUI'
+                        href='https://tiktok.com/@infinitesuccessvirtual'
                         aria-label='X'
                         sx={{ alignSelf: 'center' }}>
                         <TwitterIcon />
                     </IconButton>
-                    <IconButton
+                    {/* <IconButton
                         color='inherit'
                         href='https://www.linkedin.com/company/mui/'
                         aria-label='LinkedIn'
                         sx={{ alignSelf: 'center' }}>
                         <LinkedInIcon />
-                    </IconButton>
+                    </IconButton> */}
                 </Stack>
             </Box>
         </Container>

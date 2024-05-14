@@ -18,6 +18,22 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
+import FormPro from './Form';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
+function Copyright() {
+    return (
+        <Typography variant='body2' color='text.secondary' align='center'>
+            {'Copyright © '}
+            <Link color='inherit' href='https://m.facebook.com/people/Infinite-Success-Virtual-LLC/61557695124632'>
+                Infinite Success Virtual
+            </Link>{' '}
+            {new Date().getFullYear()}
+            {'.'}
+        </Typography>
+    );
+}
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
     return (
@@ -87,12 +103,18 @@ export default function LandingPage() {
                 <Highlights />
                 <Divider />
                 {/* <Pricing /> */}
-                <Divider />
+                {/* <Divider /> */}
                 <FAQ />
                 <Divider />
-                <Footer />
+                {/* <Footer /> */}
+                <FormPro />
+                <Divider />
+                <Typography variant='h4' align='center' component='h2' sx={{ mb: 2 }}>
+                    Infinite Success Virtual
+                </Typography>
+                <Copyright />
             </Box>
-            <ToggleCustomTheme showCustomTheme={showCustomTheme} toggleCustomTheme={toggleCustomTheme} />
+            {/* <ToggleCustomTheme showCustomTheme={showCustomTheme} toggleCustomTheme={toggleCustomTheme} /> */}
         </ThemeProvider>
     );
 }

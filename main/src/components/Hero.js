@@ -76,18 +76,20 @@ export default function Hero() {
                         </Typography>
                     </Typography>
                     <Typography textAlign='center' color='text.secondary' sx={{ width: { sm: '100%', md: '80%' } }}>
-                        Explore our cutting-edge dashboard, delivering high-quality solutions tailored to your needs.
-                        Elevate your experience with top-tier features and services.
+                        We are a Remote Call Center delivering high-quality opportunities for candidates to have the
+                        comfort of Working from Home, while creating generational wealth. With Infinite Success Virtual,
+                        you can elevate and control your work experience. We connect you with top-tier companies using
+                        custom solutions that are tailored to your needs. to help you elevate your lifestyle.
                     </Typography>
                     <Stack
                         direction={{ xs: 'column', sm: 'row' }}
                         spacing={1}
                         useFlexGap
                         sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}>
-                        <InputLabel htmlFor='email-hero' sx={visuallyHidden}>
+                        {/* <InputLabel htmlFor='email-hero' sx={visuallyHidden}>
                             Email
-                        </InputLabel>
-                        <TextField
+                        </InputLabel> */}
+                        {/* <TextField
                             id='email-hero'
                             hiddenLabel
                             size='small'
@@ -98,9 +100,11 @@ export default function Hero() {
                                 autoComplete: 'off',
                                 'aria-label': 'Enter your email address',
                             }}
-                        />
-                        <Button variant='contained' color='primary'>
-                            Start now
+                        /> */}
+                        <Button variant='outlined' color='secondary'>
+                            <Link href='va.crescentlove3llc@gmail.com'>
+                                <strong>Email Me To get Started</strong>
+                            </Link>
                         </Button>
                     </Stack>
                     <Typography variant='caption' textAlign='center'>
