@@ -39,7 +39,7 @@
         "clean2": "rm dist/* && rm dist/vendors && rm dist/styles && rm dist/src"
     },
     "dependencies": {
-        "axios": "^0.27.2",
+        "axios": "^0.28.0",
         "@emotion/react": "latest",
         "@emotion/styled": "latest",
         "@mui/icons-material": "latest",
