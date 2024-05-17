@@ -1,0 +1,18 @@
+{
+    "homepage": "https://github.com/bahim22/isv",
+    "scripts": {
+        "jsonlint": "node ./scripts/jsonlint.mjs",
+        "eslint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
+        "eslint:ci": "eslint . --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
+        "stylelint": "stylelint --reportInvalidScopeDisables --reportNeedlessDisables \"docs/**/*.{js,ts,tsx}\"",
+        "markdownlint": "markdownlint-cli2 \"**/*.md\"",
+        "valelint": "git ls-files | grep -h \".md$\" | xargs vale --filter='.Level==\"error\"'",
+        "prettier": "pretty-quick --ignore-path .eslintignore --branch next",
+        "prettier:all": "prettier --write . --ignore-path .eslintignore",
+        "build:staging": "env-cmd -f .env.staging npm run build"
+    }
+}
+// site.webmanifest || app.webmanifest
+// [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/next/examples/material-ui-cra)
+
+// [![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/next/examples/material-ui-cra)

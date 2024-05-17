@@ -1,13 +1,12 @@
 {
     "name": "isv",
     "version": "1.0.0",
-    "main": "index.js",
     "license": "MIT",
     "description": "Infinite Virtual Success Homepage by Hima Balde.",
-    "private": true,
     "repository": {
         "url": "https://github.com/bahim22/isv"
     },
+    "homepage": ".",
     "keywords": [
         "React",
         "MUI",
@@ -22,7 +21,6 @@
     "bugs": {
         "url": "https://github.com/bahim22/isv"
     },
-    "homepage": "https://github.com/bahim22/isv",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
@@ -39,11 +37,12 @@
         "clean2": "rm dist/* && rm dist/vendors && rm dist/styles && rm dist/src"
     },
     "dependencies": {
-        "axios": "^0.27.2",
         "@emotion/react": "latest",
         "@emotion/styled": "latest",
         "@mui/icons-material": "latest",
         "@mui/material": "next",
+        "axios": "^0.27.2",
+        "env-cmd": "^10.1.0",
         "react": "latest",
         "react-dom": "latest",
         "react-scripts": "latest"
@@ -55,8 +54,7 @@
         "eslint-plugin-jsx-a11y": "latest",
         "eslint-plugin-prettier": "latest",
         "eslint-plugin-react": "latest",
-        "prettier": "latest",
-        "@babel/plugin-proposal-private-property-in-object": "latest"
+        "prettier": "latest"
     },
     "browserslist": {
         "production": [
