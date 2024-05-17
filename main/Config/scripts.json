@@ -16,3 +16,33 @@
 // [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/next/examples/material-ui-cra)
 
 // [![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/next/examples/material-ui-cra)
+//  module.exports = {
+//     printWidth: 100,
+//     singleQuote: true,
+//     trailingComma: 'all',
+//     overrides: [
+//         {
+//             // files: ['docs/**/*.md', 'docs/src/pages/**/*.{js,tsx}', 'docs/data/**/*.{js,tsx}'],
+//             options: {
+//                 // otherwise code blocks overflow on the docs website
+//                 // The container is 751px
+//                 printWidth: 85,
+//             },
+//         },
+//         {
+//             files: ['docs/pages/blog/**/*.md'],
+//             options: {
+//                 // otherwise code blocks overflow on the blog website
+//                 // The container is 692px
+//                 printWidth: 82,
+//             },
+//         },
+//         {
+//             files: ['**/*.json'],
+//             options: {
+//                 trailingComma: 'none',
+//             },
+//         },
+//     ],
+
+// };

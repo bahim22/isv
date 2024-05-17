@@ -33,8 +33,8 @@
         "prettier:write": "npx prettier --write \"src/**/*.{js,jsx}\"",
         "test:espretty": "npx eslint-config-prettier src/components/*.js",
         "test:espretty1": "npx eslint-config-prettier \"src/**/*.{js,jsx}\"",
-        "clean": "rm dist/* && rm -rf dist/**/*",
-        "clean2": "rm dist/* && rm dist/vendors && rm dist/styles && rm dist/src"
+        "clean": "rm build/* && rm -rf build/**/*",
+        "clean2": "rm -rf build/* && rm -rf build/js && rm -rf build/static && rm -rf build/main && rm -rf build"
     },
     "dependencies": {
         "@emotion/react": "latest",
