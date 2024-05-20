@@ -20,11 +20,18 @@ import SitemarkIcon from './SitemarkIcon';
 
 function Copyright() {
     return (
-        <Typography variant='body2' color='text.secondary' mt={1}>
-            {'Copyright © '}
-            <Link href='https://mui.com/'>Infinite Success Virtual&nbsp;</Link>
-            {new Date().getFullYear()}
-        </Typography>
+        <>
+            <Typography variant='body2' color='text.secondary' mt={1}>
+                {'Copyright © '}
+                <Link href='https://infinitesuccessvirtual.vercel.app'>Infinite Success Virtual&nbsp;</Link>
+                {new Date().getFullYear()}
+            </Typography>
+            <Typography variant='body2' color='text.secondary' mt={1}>
+                {'Developed By: © '}
+                <Link href='https://github.com/bahim22'>EvoSync Solutions </Link>
+                {new Date().getFullYear()}
+            </Typography>
+        </>
     );
 }
 
@@ -35,8 +42,8 @@ export default function Footer() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                gap: { xs: 4, sm: 8 },
-                py: { xs: 8, sm: 10 },
+                gap: { xs: 2, sm: 4 },
+                py: { xs: 4, sm: 5 },
                 textAlign: { sm: 'center', md: 'left' },
             }}>
             <Box
@@ -50,7 +57,7 @@ export default function Footer() {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: 4,
+                        gap: 2,
                         minWidth: { xs: '100%', sm: '60%' },
                     }}>
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
@@ -92,7 +99,7 @@ export default function Footer() {
                         gap: 1,
                     }}>
                     <Typography variant='body2' fontWeight='medium'>
-                        <FormPro />
+                        {/* <FormPro /> */}
                     </Typography>
                 </Box>
                 {/* <Box
@@ -178,7 +185,7 @@ export default function Footer() {
                     <Typography display='inline' sx={{ mx: 0.5, opacity: 0.5 }}>
                         &nbsp;•&nbsp;
                     </Typography>
-                    <Link color='text.secondary' variant='body2' href='#'>
+                    <Link color='text.secondary' variant='body2' href='https://www.ariseworkfromhome.com/terms-of-use/'>
                         Terms of Service
                     </Link>
                     <Copyright />

@@ -15,9 +15,9 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
     {
         icon: <SettingsSuggestRoundedIcon />,
-        title: 'Infinite Success Virtual LLC is partnered with Fortune 500 companies',
+        title: 'Partnered with Fortune 500 companies',
         description:
-            'We work with the Arise Platform to help companies that are looking for candidates to assist customers with various needs. From booking, insurance claims, hotel packages, complaints to say the lease, we require employees to work 15 hrs a week minimum to stay aboard, yet you can work as much as you please as an independent contractor.',
+            'Working with Arise Platform helping companies looking for candidates to assist customers with various needs including: booking, insurance claims, hotel packages, etc.',
     },
     {
         icon: <ConstructionRoundedIcon />,
@@ -33,20 +33,26 @@ const items = [
     },
     {
         icon: <AutoFixHighRoundedIcon />,
-        title: 'Innovative functionality',
+        title: 'Required Hours',
         description:
-            'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+            'We require employees to work 15 hrs a week minimum to stay aboard, yet you can work as much as you please as an independent contractor.',
     },
+    // {
+    //     icon: <SupportAgentRoundedIcon />,
+    //     title: 'Reliable support',
+    //     description: 'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+    // },
     {
         icon: <SupportAgentRoundedIcon />,
-        title: 'Reliable support',
-        description: 'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+        title: 'Client Opportunities',
+        description:
+            'After completing registration, you will have access to dozens of projects for clients and brands looking for customer support services – these are called Client Opportunities. ',
     },
     {
         icon: <QueryStatsRoundedIcon />,
-        title: 'Precision in every detail',
+        title: 'Certification Courses',
         description:
-            'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+            'When you pick a Client Opportunity, you will also enroll in a certification course that will prepare you to support the client project you selected.',
     },
 ];
 
@@ -56,7 +62,7 @@ export default function Highlights() {
             id='highlights'
             sx={{
                 pt: { xs: 4, sm: 12 },
-                pb: { xs: 8, sm: 16 },
+                pb: { xs: 4, sm: 5 },
                 color: 'white',
                 bgcolor: 'hsl(220, 30%, 2%)',
             }}>
@@ -77,8 +83,8 @@ export default function Highlights() {
                         Highlights
                     </Typography>
                     <Typography variant='body1' sx={{ color: 'grey.400' }}>
-                        Enjoy reliable job opportunities with our great partners! Come Check Us Out and Take Over with
-                        Infinite Success Virtual LLC!
+                        Enjoy reliable job opportunities with our great partners! Come Take Over with Infinite Success
+                        Virtual LLC!
                     </Typography>
                 </Box>
                 <Grid container spacing={2.5}>

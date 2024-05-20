@@ -19,11 +19,11 @@
         }
     ],
     "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
-    "background_color": "#3367D6",
+    "start_url": "/",
+    "background_color": "blue",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#3367D6",
+    "theme_color": "blue",
     "shortcuts": [
         {
             "name": "How's the weather today?",
@@ -37,19 +37,19 @@
             "short_name": "Tomorrow",
             "description": "View weather information for tomorrow",
             "url": "/tomorrow?source=pwa",
-            "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+            "icons": [{ "src": "/assets/logo320.png", "sizes": "192x192" }]
         }
     ],
     "description": "Weather forecast information",
     "screenshots": [
         {
-            "src": "/images/screenshot1.png",
+            "src": "/assets/logo320.png",
             "type": "image/png",
             "sizes": "540x720",
             "form_factor": "narrow"
         },
         {
-            "src": "/images/screenshot2.jpg",
+            "src": "/assets/logo640.png",
             "type": "image/jpg",
             "sizes": "720x540",
             "form_factor": "wide"

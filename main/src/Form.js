@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 // import './styles/Form.css';
 // import './styles/Info.css';
-import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
+// import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 import Button from '@mui/material/Button';
 import { Box, TextField } from '@mui/material';
 import FormLabel from '@mui/material/FormLabel';
@@ -79,35 +79,40 @@ export default function FormPro() {
     }; */
     return (
         <>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }} align={'center'}>
+            <Box id='email' sx={{ display: 'flex', flexDirection: 'column', gap: 2 }} align={'center'}>
                 <Typography variant='h4' align='center' component='h2' sx={{ mb: 2 }}>
-                    Contact Me Today to Sign Up!
+                    Contact Today to Sign Up!
                 </Typography>
                 <form onSubmit={handleOnSubmit} method='POST'>
                     <FormLabel htmlFor='email'></FormLabel>
                     {/* <label htmlFor='email'>Email</label> */}
                     <TextField
                         id='email'
+                        fullWidth
                         type='email'
-                        placeholder='email'
+                        placeholder='Enter your email.'
                         name='_replyto'
+                        aria-colspan={80}
+                        rows={8}
                         onChange={handleOnChange}
                         required
+                        // variant='Filled'
                         value={inputs.email}
                     />
-                    <Divider />
+                    <Divider variant='middle' textAlign='center' sx={{ color: 'primary' }} />
                     <FormLabel htmlFor='message'></FormLabel>
                     {/* <label htmlFor='message'>Message</label> */}
                     <TextField
                         id='message'
+                        fullWidth
                         name='message'
-                        placeholder='message'
+                        placeholder='Enter your message.'
                         onChange={handleOnChange}
                         required
                         value={inputs.message}
                     />
-                    <Divider />
-                    <Button variant='contained' type='submit' disabled={status.submitting}>
+                    <Divider variant='middle' textAlign='center' sx={{ color: 'primary' }} />
+                    <Button variant='contained' type='submit' fullWidth disabled={status.submitting}>
                         {!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
                     </Button>
                     {/* <button type='submit' disabled={status.submitting}>
