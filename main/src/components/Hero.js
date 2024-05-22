@@ -91,7 +91,7 @@ export default function Hero() {
                             // fontSize: 'medium',
                             color: (theme) => (theme.palette.mode === 'light' ? 'primary.main' : 'primary.light'),
                         }}>
-                        <Link href='https://www.register.arise.com/' color='primary'>
+                        <Link href='https://register.arise.com/' color='primary'>
                             Register Today
                         </Link>
                     </Typography>
