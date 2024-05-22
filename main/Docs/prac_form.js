@@ -2,10 +2,10 @@
     <div class="emailBox">
         <label for="emailAddress">Your email address
         </label><br/>
-        {/* https://register.arise.com/ */}
             <input id="emailAddress" type="email" size="64" maxLength="64" required
                 placeholder="username@beststartupever.com" pattern=".+@beststartupever.com"
-                title="Please provide only a Best Startup Ever corporate email address">
+                title="Please provide only a Best Startup Ever corporate email address"
+            />
     </div>
     <div class="messageBox">
         <label for="message">Request</label>
@@ -14,7 +14,7 @@
             placeholder="My shoes are too tight, and I have forgotten how to dance.">
         </textarea>
             </div>
-    <input type="submit" value="Send Request">
+    <input type="submit" value="Send Request"/>
 </form>
 
 

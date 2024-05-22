@@ -5,10 +5,10 @@
     "description": "Business homepage for Infinite success virtual (the client paying for the site development by EvoSync Solutions by Hima Balde).",
     "scope": "/",
     "start_url": "/",
-    "background_color": "blue",
+    "background_color": "#57bef2",
     "display": "standalone",
     "id": "/isvdedess",
-    "theme_color": "blue",
+    "theme_color": "#57bef2",
     "orientation": "any",
     "icons": [
         {
