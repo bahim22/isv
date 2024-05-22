@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/bahim22/isv",
+    "homepage": "https://infinitesuccessvirtualllc.vercel.app/",
     "scripts": {
         "jsonlint": "node ./scripts/jsonlint.mjs",
         "eslint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
@@ -45,4 +45,107 @@
 //         },
 //     ],
 
-// };
+/*
+import eslintPluginPrettierRecommended from "eslin";
+import globals from "globals";
+import js from "@eslint/js";
+
+export default [
+    {
+        env: {
+            browser: true,
+        },
+        languageOptions: {
+            ecmaVersion: 2022,
+            sourceType: "module",
+            globals: {
+                ...globals.browser,
+                // myCustomGlobal: "readonly"
+            }
+        },
+        parserOptions: {
+            ecmaFeatures: {
+                jsx: true,
+                // "modules": true,
+                // "version": "2021"
+            },
+            ecmaVersion: 'latest',
+            sourceType: 'module',
+        },
+        plugins: {
+            import: import, react: react, jsx- a11y: jsx- a11y, prettier: prettier
+        },
+        extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:import/errors',
+        'plugin:jsx-a11y/recommended'
+    ],
+    files: ["src/** /*.{js,jsx}", "src/** /*.js"],
+    ignores: ["* * /*.config.js"],
+    rules: {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true,
+                "parser": "flow"
+            }
+        ],
+        'jsx-a11y/anchor-is-valid': 'warn',
+        'react/react-in-jsx-scope': 'warn',
+        'import/no-anonymous-default-export': 'warn',
+        'no-duplicate-imports': 'warn',
+        'no-unused-vars': 'off',
+        'no-undef': 'warn',
+        'no-tabs':
+            { "allowIndentationTabs": true },
+        "no-confusing-arrow": ["off", { "allowParens": true }]
+    },
+    ignores: ['node_modules/', 'dist/', 'build/', '.git/', "** /.*"],
+    settings: {
+        env: {
+            NODE_ENV: 'local',
+            production: true,
+        },
+        react: {
+            version: 'detect',
+        },
+    },}
+    js.configs.recommended,
+    eslintPluginPrettierRecommended,
+]; */
+
+/* // prettier.config.js, .prettierrc.js, prettier.config.mjs, or .prettierrc.mjs
+
+// /** @type {import("prettier").Config} *
+const config = {
+  trailingComma: "es5",
+  tabWidth: 4,
+  semi: false,
+  singleQuote: true,
+};
+
+export default config; */
+
+/*
+// option 2
+module.exports = {
+    printWidth: 120,
+    singleQuote: true,
+    trailingComma: 'es5',
+    overrides: [
+        {
+            files: ['*.md', 'Docs/*.{js,tsx}', 'Config/*.{js,tsx}'],
+            options: {
+                // stop code block overflow: The container is 751px
+                printWidth: 85,
+            },
+        },
+        {
+            files: ['** /*.json'],
+            options: {
+                trailingComma: 'none',
+            },
+        },
+    ],
+}; */

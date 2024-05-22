@@ -12,11 +12,14 @@ import FormPro from '../Form';
 import { visuallyHidden } from '@mui/utils';
 
 import FacebookIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
+import { Facebook } from '@mui/icons-material';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import TwitterIcon from '@mui/icons-material/X';
+import GoogleIcon from '@mui/icons-material/Google';
 // import TikTokIcon from "@mui/icons-material/TikTok";
 
-import SitemarkIcon from './SitemarkIcon';
+// import SitemarkIcon from './SitemarkIcon';
+import { Avatar } from '@mui/material';
 
 function Copyright() {
     return (
@@ -68,39 +71,7 @@ export default function Footer() {
                         <Typography variant='body2' color='text.secondary' mb={2}>
                             Subscribe for weekly updates. No spams ever!
                         </Typography> */}
-                        <Stack direction='row' spacing={1} useFlexGap>
-                            {/* <FormPro /> */}
-                            {/* <InputLabel htmlFor='email-newsletter' sx={visuallyHidden}>
-                                Email
-                            </InputLabel>
-                            <TextField
-                                id='email-newsletter'
-                                hiddenLabel
-                                size='small'
-                                variant='outlined'
-                                fullWidth
-                                aria-label='Enter your email address'
-                                placeholder='Your email address'
-                                inputProps={{
-                                    autoComplete: 'off',
-                                    'aria-label': 'Enter your email address',
-                                }}
-                            />
-                            <Button variant='contained' color='primary' sx={{ flexShrink: 0 }}>
-                                Subscribe
-                            </Button> */}
-                        </Stack>
                     </Box>
-                </Box>
-                <Box
-                    sx={{
-                        display: { xs: 'none', sm: 'flex' },
-                        flexDirection: 'column',
-                        gap: 1,
-                    }}>
-                    <Typography variant='body2' fontWeight='medium'>
-                        {/* <FormPro /> */}
-                    </Typography>
                 </Box>
                 {/* <Box
                     sx={{
@@ -203,22 +174,22 @@ export default function Footer() {
                         href='https://m.facebook.com/people/Infinite-Success-Virtual-LLC/61557695124632'
                         aria-label='Facebook'
                         sx={{ alignSelf: 'center' }}>
-                        <FacebookIcon />
+                        <Facebook />
                     </IconButton>
                     <IconButton
                         color='inherit'
                         href='https://tiktok.com/@infinitesuccessvirtual'
-                        aria-label='X'
+                        aria-label='tiktok'
                         sx={{ alignSelf: 'center' }}>
-                        <TwitterIcon />
+                        <Avatar src='assets/tiktok.png' />
                     </IconButton>
-                    {/* <IconButton
+                    <IconButton
                         color='inherit'
-                        href='https://www.linkedin.com/company/mui/'
-                        aria-label='LinkedIn'
+                        href='https://www.sites.google.com/view/infinitesuccessvirtualllc'
+                        aria-label='Google Business'
                         sx={{ alignSelf: 'center' }}>
-                        <LinkedInIcon />
-                    </IconButton> */}
+                        <GoogleIcon />
+                    </IconButton>
                 </Stack>
             </Box>
         </Container>

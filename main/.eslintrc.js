@@ -19,20 +19,19 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:import/errors',
         'plugin:jsx-a11y/recommended',
-        'plugin:prettier/recommended',
+        'plugin:prettier/recommended'
     ],
     rules: {
-        'jsx-a11y/anchor-is-valid': 'off',
-        'react/react-in-jsx-scope': 'off',
-        'import/no-anonymous-default-export': 'off',
+        'jsx-a11y/anchor-is-valid': 'warn',
+        'react/react-in-jsx-scope': 'warn',
+        'import/no-anonymous-default-export': 'warn',
         'no-duplicate-imports': 'warn',
         'no-unused-vars': 'off',
-        'no-undef': 'off',
-        'no-tabs': 'off',
-        // { "allowIndentationTabs": true }
-        // "no-confusing-arrow": ["warning", { "allowParens": false }]
+        'no-undef': 'warn',
+        'no-tabs': 'warn',
+        // "no-confusing-arrow": ["warning", { "allowParens": true }]
     },
-    ignorePatterns: ['node_modules/', 'dist/'],
+    ignorePatterns: ['node_modules/', 'dist/', 'build/', '*.env'],
     settings: {
         env: {
             NODE_ENV: 'local',

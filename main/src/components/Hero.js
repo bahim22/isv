@@ -27,8 +27,7 @@ const StyledBox = styled('div')(({ theme }) => ({
             // ? '/static/images/templates/templates-images/hero-light.png'
             : '/static/images/templates/templates-images/hero-dark.png'
     })`, */
-    backgroundImage: `url(assets/logo320.png)`,
-    // backgroundImage: `url(https://raw.githubusercontent.com/bahim22/isv/verc/main/src/assets/logo640.png?token=GHSAT0AAAAAACSQMJNO3VZDEEJEJW3L3N22ZSK32NQ)`,
+    backgroundImage: `url(assets/isv320.png)`,
     // backgroundSize: 'cover',
     // backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
@@ -128,17 +127,12 @@ export default function Hero() {
                         </Button>
                     </Stack>
                     <Typography textAlign='center' color='text.secondary' sx={{ width: { sm: '100%', md: '80%' } }}>
-                        We connect you with top-tier companies using custom solutions that are tailored to your needs.
-                        to help you elevate your lifestyle. With Infinite Success Virtual, you can elevate and control
-                        your work experience.
-                        {/* <Link href='https://www.ariseworkfromhome.com/terms-of-use/' color='primary'>
-                            Terms & Conditions
-                        </Link> */}
-                        .
+                        Now with the option of purchasing the rights to own your own Virtual Call Center for $750! This
+                        includes a course and training with the added benefit of partnering with Fortune 500 companies
+                        that will provide the opportunities.
                     </Typography>
                 </Stack>
                 <StyledBox id='image' />
-                {/* <StyledBox id='image' /> */}
             </Container>
         </Box>
     );

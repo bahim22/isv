@@ -1,3 +1,9 @@
+
+# Docs
+
+## wget, curl
+
+```bash
 #!/opt/homebrew/bin/bash
 
 mkdir ./landing
@@ -35,7 +41,11 @@ $ curl --version | grep HTTP3
 
 # Try curl on any HTTP/3 enabled sites.
 curl --http3 https://blog.cloudflare.com -I
+```
 
+## npm
+
+```bash
 npm install test run find-dupes outdated prune dedupe
 npm update ll ls
 # npm config set <key>=<value> [<key>=<value> ...]
@@ -54,3 +64,82 @@ npm cache clean [<key>]
 npm cache ls [ name@version ]
 npm cache verify
 npm audit, version
+
+{
+  isv: '1.0.0',
+  npm: '10.7.0',
+  node: '22.1.0',
+  acorn: '8.11.3',
+  ada: '2.7.8',
+  ares: '1.28.1',
+  base64: '0.5.2',
+  brotli: '1.1.0',
+  cjs_module_lexer: '1.2.2',
+  cldr: '44.1',
+  icu: '74.2',
+  llhttp: '9.2.1',
+  modules: '127',
+  napi: '9',
+  nghttp2: '1.61.0',
+  openssl: '3.3.0',
+  simdjson: '3.8.0',
+  simdutf: '5.2.4',
+  tz: '2023c',
+  undici: '6.13.0',
+  unicode: '15.1',
+  uv: '1.48.0',
+  uvwasi: '0.0.20',
+  v8: '12.4.254.14-node.11',
+  zlib: '1.2.12'
+}
+
+├── @emotion/react@11.11.4
+├── @emotion/styled@11.11.5
+├── @eslint/js@9.3.0
+├── @formspree/react@2.5.1
+├── @mui/icons-material@5.15.18
+├── @mui/material@5.15.18
+├── axios@1.7.2
+├── dotenv@16.4.5
+├── env-cmd@10.1.0
+├── eslint-config-prettier@9.1.0
+├── eslint-plugin-import@2.29.1
+├── eslint-plugin-jsx-a11y@6.8.0
+├── eslint-plugin-prettier@5.1.3
+├── eslint-plugin-react@7.34.1
+├── eslint@8.57.0
+├── prettier@3.2.5
+├── react-dom@18.3.1
+├── react-scripts@5.0.1
+└── react@18.3.1
+```
+
+## React Env
+
+```js
+render() {
+  return (
+    <div>
+      <small>You are running this application in <b>{process.env.NODE_ENV}</b> mode.</small>
+      <form>
+        <input type="hidden" defaultValue={process.env.REACT_APP_NOT_SECRET_CODE} />
+      </form>
+    </div>
+  );
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  analytics.disable();
+}
+```
+
+```powershell
+($env:REACT_APP_NOT_SECRET_CODE = "abcdef") -and (npm start)
+```
+
+```bash
+REACT_APP_NOT_SECRET_CODE=abcdef npm start
+REACT_APP_VERSION=$npm_package_version
+# // or
+REACT_APP_VERSION=${npm_package_version}
+```

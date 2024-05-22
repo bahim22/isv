@@ -15,6 +15,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ToggleColorMode from './ToggleColorMode';
 // import { Icon } from '@mui/material';
 import LensBlurIcon from '@mui/icons-material/LensBlur';
+// import { Avatar } from '@mui/material';
 // import Sitemark from './SitemarkIcon';
 
 function AppAppBar({ mode, toggleColorMode }) {
@@ -74,18 +75,12 @@ function AppAppBar({ mode, toggleColorMode }) {
                             px: 0,
                         }}>
                         {/* <Sitemark /> */}
+                        {/* <Avatar alt='Icon' src='assets/isv320.png' /> */}
                         <LensBlurIcon />
                         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                             <Button variant='text' color='info' size='small' onClick={() => scrollToSection('email')}>
                                 Contact
                             </Button>
-                            {/* <Button
-                                variant='text'
-                                color='info'
-                                size='small'
-                                onClick={() => scrollToSection('testimonials')}>
-                                Testimonials
-                            </Button> */}
                             <Button variant='text' color='info' size='small' onClick={() => scrollToSection('faq')}>
                                 FAQ
                             </Button>
@@ -106,12 +101,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                             alignItems: 'center',
                         }}>
                         <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-                        {/* <Button color='primary' variant='text' size='small'>
-                            Sign in
-                        </Button>
-                        <Button color='primary' variant='contained' size='small'>
-                            Sign up
-                        </Button> */}
                     </Box>
                     <Box sx={{ display: { sm: 'flex', md: 'none' } }}>
                         <IconButton aria-label='Menu button' onClick={toggleDrawer(true)}>
@@ -140,16 +129,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                                 <MenuItem onClick={() => scrollToSection('highlights')}>Highlights</MenuItem>
                                 {/* <MenuItem onClick={() => scrollToSection('pricing')}>Pricing</MenuItem> */}
                                 <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                                {/* <MenuItem>
-                                    <Button color='primary' variant='contained' fullWidth>
-                                        Sign up
-                                    </Button>
-                                </MenuItem>
-                                <MenuItem>
-                                    <Button color='primary' variant='outlined' fullWidth>
-                                        Sign in
-                                    </Button>
-                                </MenuItem> */}
                             </Box>
                         </Drawer>
                     </Box>

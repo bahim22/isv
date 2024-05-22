@@ -16,6 +16,8 @@
             </div>
     <input type="submit" value="Send Request">
 </form>
+
+
 const StyledBox = styled('div')(({ theme }) => ({
     alignSelf: 'center',
     width: '100%',
@@ -29,10 +31,10 @@ const StyledBox = styled('div')(({ theme }) => ({
     outline: '1px solid',
     /* backgroundImage: `url(${
         theme.palette.mode === 'light'
-            // ? '/static/images/templates/templates-images/hero-light.png'
+            ? '/static/images/templates/templates-images/hero-light.png'
             : '/static/images/templates/templates-images/hero-dark.png'
     })`, */
-    backgroundImage: `url('https://raw.githubusercontent.com/bahim22/isv/verc/main/src/assets/logo640.png?token=GHSAT0AAAAAACSQMJNO4PZ2FN4G7BRUNR56ZSK2UTQ'})``url(${theme.palette.mode === 'light' ? '/assets/SelectWork.jpeg' : 'https://raw.githubusercontent.com/bahim22/isv/verc/main/src/assets/logo640.png?token=GHSAT0AAAAAACSQMJNO4PZ2FN4G7BRUNR56ZSK2UTQ'})`,
+    backgroundImage: `url('https://raw.githubusercontent.com/bahim22/isv/verc/main/src/assets/logo640.png})``url(${theme.palette.mode === 'light' ? '/assets/SelectWork.jpeg' : 'https://raw.githubusercontent.com/bahim22/isv/verc/main/src/assets/logo640.png?'})`,
     // backgroundSize: 'cover',
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',

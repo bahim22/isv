@@ -15,21 +15,21 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
     {
         icon: <SettingsSuggestRoundedIcon />,
-        title: 'Partnered with Fortune 500 companies',
+        title: 'We partner with Fortune 500 companies.',
         description:
-            'Working with Arise Platform helping companies looking for candidates to assist customers with various needs including: booking, insurance claims, hotel packages, etc.',
+            'This is made possible by working with the Arise Platform. We help companies find candidates that assist customers with various needs including: booking, insurance claims, hotel packages, and more.',
     },
     {
         icon: <ConstructionRoundedIcon />,
-        title: 'Built to last',
+        title: 'Built to last.',
         description:
-            'Take control of your world and let Infinite Success Virtual LLC. help jump start Empowering your Success Journey!!!',
+            'Take control of your world and let Infinite Success Virtual help jump start your career and empower your Success Journey!!!',
     },
     {
         icon: <ThumbUpAltRoundedIcon />,
-        title: 'option of purchasing the rights to own your own Virtual Call Center.',
+        title: 'We connect you with top - tier companies using custom solutions.',
         description:
-            'Purchase your own Virtual Call Center for $750 with a course  & training plus Fortune 500 companies that provides the work from home jobs',
+            'Each opportunity is tailored to your needs to help you elevate your lifestyle. With Infinite Success Virtual, you can elevate and control your work experience.',
     },
     {
         icon: <AutoFixHighRoundedIcon />,
