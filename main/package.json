@@ -38,6 +38,7 @@
         "clean2": "rm -rf build/* && rm -rf build/js && rm -rf build/static && rm -rf build/main && rm -rf build"
     },
     "dependencies": {
+        "axios": "^0.28.0",
         "@emotion/react": "latest",
         "@emotion/styled": "latest",
         "@formspree/react": "^2.5.1",
