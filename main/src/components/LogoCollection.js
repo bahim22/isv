@@ -36,7 +36,7 @@ export default function LogoCollection() {
     return (
         <Box id='logoCollection' sx={{ py: 4 }}>
             <Typography component='p' variant='subtitle2' align='center' color='text.secondary'>
-                Trusted by the best companies
+                Work with companies like Dick&apos;s Sporting Goods, Intuit TurboTax and Intuit QuickBooks!
             </Typography>
             <Grid container justifyContent='center' sx={{ mt: 0.5, opacity: 0.6 }}>
                 {logos.map((logo, index) => (

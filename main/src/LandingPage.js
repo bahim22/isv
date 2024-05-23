@@ -76,13 +76,13 @@ ToggleCustomTheme.propTypes = {
 };
 
 export default function LandingPage() {
-    const [mode, setMode] = React.useState('light');
+    const [mode, setMode] = React.useState('dark');
     const [showCustomTheme, setShowCustomTheme] = React.useState(true);
     const LPtheme = createTheme(getLPTheme(mode));
     const defaultTheme = createTheme({ palette: { mode } });
 
     const toggleColorMode = () => {
-        setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+        setMode((prev) => (prev === 'light' ? 'dark' : 'light'));
     };
 
     const toggleCustomTheme = () => {
@@ -96,7 +96,7 @@ export default function LandingPage() {
             <Hero />
             <Box sx={{ bgcolor: 'background.default' }}>
                 <LogoCollection />
-                <Features />
+                {/* <Features /> */}
                 <Divider />
                 {/* <Testimonials /> */}
                 <Divider />
@@ -106,13 +106,13 @@ export default function LandingPage() {
                 {/* <Divider /> */}
                 <FAQ />
                 <Divider />
-                {/* <Footer /> */}
                 <FormPro />
                 <Divider />
-                <Typography variant='h4' align='center' component='h2' sx={{ mb: 2 }}>
+                <Typography variant='h4' align='center' component='h2' sx={{ my: 2 }}>
                     Infinite Success Virtual
                 </Typography>
-                <Copyright />
+                {/* <Copyright /> */}
+                <Footer />
             </Box>
             {/* <ToggleCustomTheme showCustomTheme={showCustomTheme} toggleCustomTheme={toggleCustomTheme} /> */}
         </ThemeProvider>

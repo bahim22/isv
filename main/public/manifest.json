@@ -1,15 +1,72 @@
 {
-    "short_name": "Your Orders",
-    "name": "Your Orders",
+    "short_name": "Weather",
+    "name": "Weather: Do I need an umbrella?",
     "icons": [
         {
-            "src": "favicon32.ico",
-            "sizes": "64x64 32x32 24x24 16x16",
-            "type": "image/x-icon"
+            "src": "/images/icons-vector.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/images/icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ],
-    "start_url": ".",
+    "id": "/?source=pwa",
+    "start_url": "/",
+    "background_color": "blue",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "scope": "/",
+    "theme_color": "blue",
+    "description": "Online Business for client connections.",
+    "screenshots": [
+        {
+            "src": "/assets/isv320.png",
+            "type": "image/png",
+            "sizes": "540x720",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/assets/isv640.png",
+            "type": "image/jpg",
+            "sizes": "720x540",
+            "form_factor": "wide"
+        }
+    ],
+     "shortcuts": [
+         {
+             "name": "Open Play Later",
+             "short_name": "Play Later",
+             "description": "View the list of podcasts you saved for later",
+             "url": "/play-later?utm_source=homescreen",
+             "icons": [{ "src": "/icons/play-later.png", "sizes": "192x192" }]
+         },
+         {
+             "name": "View Subscriptions",
+             "short_name": "Subscriptions",
+             "description": "View the list of podcasts you listen to",
+             "url": "/subscriptions?utm_source=homescreen",
+             "icons": [{ "src": "/icons/subscriptions.png", "sizes": "192x192" }]
+         },
+         {
+             "name": "How's the weather today?",
+             "short_name": "Today",
+             "description": "View weather information for today",
+             "url": "/today?source=pwa",
+             "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+         },
+         {
+             "name": "How's the weather tomorrow?",
+             "short_name": "Tomorrow",
+             "description": "View weather information for tomorrow",
+             "url": "/tomorrow?source=pwa",
+             "icons": [{ "src": "/assets/logo320.png", "sizes": "192x192" }]
+         }
+     ]
 }

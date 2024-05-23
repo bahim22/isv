@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-// import './styles/Form.css';
-// import './styles/Info.css';
-import ScopedCssBaseline from '@mui/material/ScopedCssBaseline';
 import Button from '@mui/material/Button';
 import { Box, TextField } from '@mui/material';
 import FormLabel from '@mui/material/FormLabel';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
+// import { useForm, ValidationError } from '@formspree/react';
+// import { config, configDotenv } from 'dotenv';
 
-// require('dotenv').config();
+// config({path: '.env'});
 
 export default function FormPro() {
     const [status, setStatus] = useState({
@@ -54,15 +53,12 @@ export default function FormPro() {
     };
     const handleOnSubmit = (e) => {
         // @ts-ignore
-        // const formspree = process.env.REACT_APP_FORM_ID;
-        // const formspree = process.env.FORM_URI;
-        // url: `${formspree}` || 'https://formspree.io/f/xrgjabgr',
-        // const fkey = process.env.FORM_KEY;
+        // const formspree = process.env.REACT_APP_FORM_URI;
         e.preventDefault();
         setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
         axios({
             method: 'POST',
-            url: 'https://formspree.io/f/xrgjabgr',
+            url: 'https://formspree.io/f/xrgjabgr', // || '{ process.env.REACT_APP_FORM_URI }',
             data: inputs,
         })
             .then((response) => {
@@ -72,61 +68,44 @@ export default function FormPro() {
                 handleServerResponse(false, error.response.data.error);
             });
     };
-    /*  const SubButton = () => {
-        <button type='submit' disabled={status.submitting}>
-            {!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
-        </button>;
-    }; */
     return (
         <>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }} align={'center'}>
+            <Box id='email' sx={{ display: 'flex', flexDirection: 'column', gap: 2 }} align={'center'}>
                 <Typography variant='h4' align='center' component='h2' sx={{ mb: 2 }}>
-                    Contact Me Today to Sign Up!
+                    Contact Today to Sign Up!
                 </Typography>
                 <form onSubmit={handleOnSubmit} method='POST'>
                     <FormLabel htmlFor='email'></FormLabel>
-                    {/* <label htmlFor='email'>Email</label> */}
                     <TextField
                         id='email'
+                        fullWidth
                         type='email'
-                        placeholder='email'
+                        placeholder='Enter your email.'
                         name='_replyto'
+                        aria-colspan={80}
+                        rows={8}
                         onChange={handleOnChange}
                         required
                         value={inputs.email}
                     />
-                    <Divider />
+                    <Divider variant='middle' textAlign='center' sx={{ color: 'primary' }} />
                     <FormLabel htmlFor='message'></FormLabel>
-                    {/* <label htmlFor='message'>Message</label> */}
                     <TextField
                         id='message'
+                        fullWidth
                         name='message'
-                        placeholder='message'
+                        placeholder='Enter your message.'
+                        aria-colspan={80}
+                        rows={8}
                         onChange={handleOnChange}
                         required
                         value={inputs.message}
                     />
-                    <Divider />
-                    <Button variant='contained' type='submit' disabled={status.submitting}>
+                    <Divider variant='middle' textAlign='center' sx={{ color: 'primary' }} />
+                    <Button variant='contained' type='submit' fullWidth disabled={status.submitting}>
                         {!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
                     </Button>
-                    {/* <button type='submit' disabled={status.submitting}>
-                        {!status.submitting ? (!status.submitted ? 'Submit' : 'Submitted') : 'Submitting...'}
-                    </button> */}
                 </form>
-                {/* <div>
-                    <img
-                        className='object-cover object-center rounded'
-                        alt='ISV'
-                        title='ISV'
-                        loading='eager'
-                        src='./assets/logo640.png'
-                        // src='/logo640.png'
-                        width='auto'
-                        height='auto'
-                    />
-                    <img title='my puppy' width='50%' height='50' src='/pup.jpeg' alt='logo' />
-                </div>*/}
             </Box>
             {status.info.error && <div className='error'>Error: {status.info.msg}</div>}
             {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
@@ -134,4 +113,21 @@ export default function FormPro() {
     );
 }
 
-// export default FormPro;
+/* export function ContactForm() {
+    const [state, handleSubmit] = useForm('xvoeyyjd');
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
+    return (
+        <form onSubmit={handleSubmit}>
+            <label htmlFor='email'>Email Address</label>
+            <input id='email' type='email' name='email' />
+            <ValidationError prefix='Email' field='email' errors={state.errors} />
+            <textarea id='message' name='message' />
+            <ValidationError prefix='Message' field='message' errors={state.errors} />
+            <button type='submit' disabled={state.submitting}>
+                Submit
+            </button>
+        </form>
+    );
+} */
